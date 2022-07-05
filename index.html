@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de emprestimo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>Simulador de emprestimo</h2>
+  <form action="">
+    <input type="text" id="textoValor" placeholder="Value do imóvel"><br>
+    <input type="text" id="textoEntrada" placeholder="Valor de entrada"><br>
+    <input type="text" id="textoTaxaJuros" placeholder="Taxa de Juros"><br>
+    <input type="text" id="textoPrazo" placeholder="Prazo (meses)"><br>
+    <button id="btnCalc">Calcular</button>
+    <input type="checkbox" name="carencia" id="carencia">
+    <label for="carencia">Com carencia?</label>
+    <select name="lista" id="lista" hidden>
+      <option value="2">2 meses</option>
+      <option value="3">3 meses</option>
+      <option value="6">6 meses</option>
+    </select>
+  </form>
+  <br>
+  <table>
+    <thead>
+      <th>No.</th>
+      <th>Valor</th>
+      <th>Amortização</th>
+      <th>Juros</th>
+      <th>Saldo Devedor</th>
+    </thead>
+    <tbody id="tBody">
+    </tbody>
+  </table>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
